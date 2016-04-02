@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <item android:title="Locais" android:id="@+id/navigation_item_2" android:icon="@drawable/composea" ></item>
+            <item android:title="Ônibus"  android:icon="@drawable/inbox" ></item>
+
+
+
+
+    <group android:id="@+id/shitss">
+
+            <item android:title="Configurações" android:icon="@drawable/settings"></item>
+            <item android:title="Ajuda" android:icon="@drawable/help"></item>
+    </group>
+
+
+
+
+
+</menu>

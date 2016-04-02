@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:title="Locais"
+          android:id="@+id/nav_item_places"
+          android:icon="@drawable/inbox"/>
+
+    <item android:title="Ônibus"
+          android:id="@+id/nav_item_buses"
+          android:icon="@drawable/sent"/>
+
+
+
+
+
+    <group android:id="@+id/group_settings_id">
+
+        <item android:title="Configurações"
+              android:icon="@drawable/settings"
+              android:id="@+id/nav_item_settings"/>
+        <item android:title="Ajuda"
+             android:id="@+id/nav_item_help"
+             android:icon="@drawable/help"/>
+    </group>
+
+
+</menu>
