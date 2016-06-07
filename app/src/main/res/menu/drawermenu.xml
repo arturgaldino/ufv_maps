@@ -12,7 +12,9 @@
           android:icon="@drawable/sent"/>
 
 
-
+    <item android:title="Eventos"
+        android:id="@+id/nav_item_events"
+        android:icon="@drawable/compose"/>
 
 
     <group android:id="@+id/group_settings_id">

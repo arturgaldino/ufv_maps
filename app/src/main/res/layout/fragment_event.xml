@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="5dp"
+    card_view:cardUseCompatPadding="true"
+    android:clickable="true"
+    android:background="#ADD8E6">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/bbt_img"
+            android:id="@+id/imageView"
+            android:layout_above="@+id/data_ini" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TITULO"
+            android:id="@+id/titulo"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="25dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titulo"
+            android:layout_toRightOf="@id/imageView"
+            android:text="Descrição - bla bla bla bla bla bla bla bla bla bla bla bla bla   bla bla bla bla bla bla "
+            android:id="@+id/denominacao"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/denominacao"
+            android:layout_toRightOf="@id/imageView"
+            android:text="Inicio: 25/05/2016"
+            android:id="@+id/data_ini"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fim: 26/05/2016"
+            android:id="@+id/data_fim"
+            android:layout_below="@+id/denominacao"
+            android:layout_toRightOf="@+id/data_ini"
+            android:layout_toEndOf="@+id/data_ini"
+            android:layout_marginLeft="15dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/data_ini"
+            android:layout_toRightOf="@id/imageView"
+            android:text="Publico Maximo: 300"
+            android:id="@+id/publico"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Horario: 16h"
+            android:id="@+id/hora_ini"
+            android:layout_below="@+id/data_ini"
+            android:layout_toRightOf="@id/publico"
+            android:layout_toEndOf="@+id/data_ini"
+            android:layout_marginLeft="15dp"
+             />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
