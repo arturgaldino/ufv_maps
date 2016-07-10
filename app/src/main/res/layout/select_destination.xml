@@ -1,10 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<fragment
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/map2"
-    tools:context="com.artur.ufv_maps.Places.SelectDestinationActivity"
-    android:name="com.google.android.gms.maps.SupportMapFragment"
-    />
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_blank">
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map2"
+        tools:context="com.artur.ufv_maps.Places.SelectDestinationActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/walking"
+        />
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/driving"
+        android:layout_toRightOf="@id/walking"
+        />
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/bicycle"
+        android:layout_toRightOf="@id/driving"
+        />
+
+    <EditText
+        android:id="@+id/searchView1"
+        android:layout_width="250dp"
+        android:layout_height="34dp"
+        android:hint="Search Location"
+        android:textColor="@android:color/black"
+        android:background="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/bicycle"
+        android:layout_toEndOf="@+id/bicycle"
+        android:layout_alignBottom="@+id/bicycle"/>
+
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/searchView1"
+        android:layout_alignBottom="@+id/searchView1"
+        android:layout_alignRight="@+id/searchView1"
+        android:background="@drawable/help"/>
+
+</RelativeLayout>

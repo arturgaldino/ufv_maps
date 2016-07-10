@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Bibioteca Central"
-        android:id="@+id/textView2"
+        android:id="@+id/tittleView"
         android:layout_below="@+id/imageView"
         android:layout_centerHorizontal="true" />
 
@@ -30,18 +30,18 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Aqui tem um texto bem longo que é a descrição do lugar. bla bla bla bla bla bla"
         android:id="@+id/textView3"
-        android:layout_below="@+id/textView2"
+        android:layout_below="@+id/tittleView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Direções"
-        android:id="@+id/button"
+        android:text="Direções para..."
+        android:id="@+id/routeButton"
         android:layout_below="@+id/textView3"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_alignStart="@+id/button2"
+        android:layout_alignLeft="@+id/buildingButton"
+        android:layout_alignStart="@+id/buildingButton"
         android:layout_marginTop="70dp"
         />
 
@@ -49,16 +49,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Planta dos Predios"
-        android:id="@+id/button2"
-        android:layout_below="@+id/button"
+        android:id="@+id/buildingButton"
+        android:layout_below="@+id/routeButton"
         android:layout_centerHorizontal="true"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Reclamações"
-        android:id="@+id/button3"
-        android:layout_below="@+id/button2"
+        android:id="@+id/feedbackButton"
+        android:layout_below="@+id/buildingButton"
         android:layout_centerHorizontal="true" />
 
 
