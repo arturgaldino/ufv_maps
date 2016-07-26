@@ -22,7 +22,7 @@
         android:layout_alignParentStart="true"/>
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/searchButtonMain"
         android:layout_width="28dp"
         android:layout_height="25dp"
         android:background="@drawable/help"
